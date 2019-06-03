@@ -59,12 +59,12 @@
       "alignAttributesVertically": true,
       "ignores": []
     }],
-    "vue/max-attributes-per-line": ["error", {
-          "singleline": 1,
-          "multiline": {
-            "max": 1,
-            "allowFirstLine": true
-          }
+    "vue/max-attributes-per-line": ["warning", {
+      "singleline": 1,
+      "multiline": {
+        "max": 1,
+        "allowFirstLine": true
+      }
     }]
   },
   "plugins": [

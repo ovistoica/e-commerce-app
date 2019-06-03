@@ -37,6 +37,11 @@ export const store = new Vuex.Store({
         addProduct (state, product) {
             product.slug = slugify(product.name);
             state.products.push(product);
+        },
+        deleteProduct(state, index) {
+            state.products = state.products
+                .slice(0,index)
+                .concat(state.products.slice(index + 1, state.products.length));
         }
     }, 
     getters: {
