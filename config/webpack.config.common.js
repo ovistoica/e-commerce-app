@@ -58,7 +58,7 @@ const webpackConfig = {
     },
     plugins: [
         new VueLoaderPlugin(),
-        new HtmlPlugin({ template: 'index.html', chunksSortMode: 'dependency' })
+        new HtmlPlugin({ template: 'public/index.html', chunksSortMode: 'dependency' })
     ]
 };
 

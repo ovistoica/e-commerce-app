@@ -4,7 +4,8 @@
              :key="index"
              @click="$router.push(`/product/${product.slug}`)"
         >
-            <img class="image" :src="product.imageUrl">
+            <img class="image" 
+                 :src="product.imageUrl">
             <h2>{{ product.name }}</h2>
             <p class="description">
                 {{ product.description }}
@@ -18,14 +19,14 @@
 </template>
 
 <script>
-export default {
+  export default {
     name: 'Products',
     methods: {
-        deleteProduct(index) {
-            this.$store.commit('deleteProduct', index);
-        }
+      deleteProduct (index) {
+        this.$store.commit('deleteProduct', index);
+      }
     }
-}
+  };
 </script>
 
 <style scoped>

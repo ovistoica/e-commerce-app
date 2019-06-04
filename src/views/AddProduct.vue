@@ -30,36 +30,39 @@
           required 
         >
       </div>
-      <input type="submit" value="Add" class="button">
+      <input type="submit" 
+             value="Add" 
+             class="button"> 
     </form>
   </div>
 </template>
 
 <script>
-export default {
+  export default {
     name: 'AddProduct',
     data () {
-        return {
-            name: '',
-            price: '',
-            imageUrl: '',
-            description: ''
-        };
+      return {
+        name: '',
+        price: '',
+        imageUrl: '',
+        description: ''
+      };
     },
     methods: {
-        addProduct () {
-            this.$store.commit('addProduct', {
-                name: this.name,
-                price: this.price,
-                description: this.description,
-                imageUrl: this.imageUrl
-            });
-            this.name = '';
-            this.description = '';
-            this.price = '';
-            this.imageUrl = '';
-        }
-    },
+      addProduct () {
+        this.$store.commit('addProduct', {
+          name: this.name,
+          price: this.price,
+          description: this.description,
+          imageUrl: this.imageUrl
+        });
+        this.name = '';
+        this.description = '';
+        this.price = '';
+        this.imageUrl = '';
+        this.$router.push('/products');
+      }
+  },
 };
 </script>
 

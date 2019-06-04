@@ -1,0 +1,6 @@
+{
+    "eslint.enable": true,
+    "prettier.eslintIntegration": true,
+    "vetur.format.defaultFormatter.js": "prettier-eslint",
+    "editor.tabSize": 2
+}

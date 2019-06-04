@@ -22,7 +22,7 @@
     "arrow-spacing": "error",
     "constructor-super": "error",
     "curly": "error",
-    "indent": ["error", 4,  { "SwitchCase": 1 }],
+    "indent": 0,
     "keyword-spacing": "error",
     "no-console": 0,
     "no-const-assign": "error",
@@ -52,20 +52,23 @@
         ]
       }
     ],
-    "vue/html-indent": ["warning", "space", {
-      "attribute": 4,
-      "baseIndent": 4,
+    "vue/html-indent": [1, 2, {
+      "attribute": 1,
+      "baseIndent": 1,
       "closeBracket": 0,
       "alignAttributesVertically": true,
       "ignores": []
     }],
-    "vue/max-attributes-per-line": ["warning", {
-      "singleline": 1,
-      "multiline": {
-        "max": 1,
-        "allowFirstLine": true
-      }
-    }]
+  "vue/max-attributes-per-line": ["error", {
+    "singleline": 1,
+    "multiline": {
+      "max": 1,
+      "allowFirstLine": true
+    }
+  }],
+  "vue/script-indent": ["warn", 2, {
+  "baseIndent": 1
+}]
   },
   "plugins": [
     "vue"
