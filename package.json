@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "vue": "^2.6.10",
     "vuex-persist": "^2.0.1"
   }
